@@ -65,10 +65,6 @@
         <Style x:Key="GlassRipple" TargetType="sf:SfEffectsView">
             <Setter Property="TouchDownEffects" Value="Ripple" />
             <Setter Property="RippleBackground" Value="#CCFFFFFF" />
-            <Setter Property="RippleDuration" Value="320" />
-            <Setter Property="AnimationDuration" Value="220" />
-            <Setter Property="RippleRadius" Value="140" />
-            <Setter Property="SelectionHighlightColor" Value="#55FFFFFF" />
         </Style>
 
         <Style x:Key="GlassShine" TargetType="Grid">
