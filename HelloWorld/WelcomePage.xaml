@@ -2,13 +2,143 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorld.WelcomePage"
-             Title="Boas-vindas">
+             Title="Menu">
 
-    <VerticalStackLayout Padding="30,24" Spacing="16">
-        <Label Text="Login realizado" Style="{StaticResource Headline}" />
-        <Label x:Name="WelcomeLabel"
-               Text="Bem-vindo!"
-               Style="{StaticResource SubHeadline}" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20,16" Spacing="18">
+            <Label Text="Menu Operacional" Style="{StaticResource Headline}" />
+            <Label x:Name="WelcomeLabel"
+                   Text="Bem-vindo!"
+                   Style="{StaticResource SubHeadline}" />
+
+            <Label Text="Essenciais (operacionais)" FontAttributes="Bold" />
+            <Grid ColumnSpacing="12" RowSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Frame Grid.Row="0" Grid.Column="0" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🧾 Picking (Fila)" FontAttributes="Bold" />
+                        <Label Text="Iniciar separação" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="1" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="✅ Conferência (Check)" FontAttributes="Bold" />
+                        <Label Text="Validar OS" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="0" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="📦 Packing (Volumes)" FontAttributes="Bold" />
+                        <Label Text="Embalar e etiquetar" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="1" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🚚 Expedição" FontAttributes="Bold" />
+                        <Label Text="Carregar e finalizar" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="2" Grid.Column="0" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="📥 Recebimento" FontAttributes="Bold" />
+                        <Label Text="Check-in / ASN" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="2" Grid.Column="1" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🗂️ Putaway" FontAttributes="Bold" />
+                        <Label Text="Endereçar estoque" />
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+
+            <Label Text="Suporte rápido" FontAttributes="Bold" />
+            <Grid ColumnSpacing="12" RowSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Frame Grid.Row="0" Grid.Column="0" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="📊 Inventário" FontAttributes="Bold" />
+                        <Label Text="Consultar saldo/posição" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="1" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🔁 Movimentação" FontAttributes="Bold" />
+                        <Label Text="Transferir/ajustar" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="0" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="♻️ Reposição de Picking" FontAttributes="Bold" />
+                        <Label Text="Reabastecer" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="1" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="📌 Minhas Tarefas" FontAttributes="Bold" />
+                        <Label Text="Pendências do operador" />
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+
+            <Label Text="Gestão/visibilidade" FontAttributes="Bold" />
+            <Grid ColumnSpacing="12" RowSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Frame Grid.Row="0" Grid.Column="0" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="⚠️ Alertas" FontAttributes="Bold" />
+                        <Label Text="Divergências/erros" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="1" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="📈 KPIs rápidos" FontAttributes="Bold" />
+                        <Label Text="Hoje: separadas / conferidas / expedidas" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="0" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🧩 Cadastro rápido" FontAttributes="Bold" />
+                        <Label Text="Produto/Lote" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="1" Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="🧾 Auditoria" FontAttributes="Bold" />
+                        <Label Text="Histórico de movimentações" />
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 
 </ContentPage>
