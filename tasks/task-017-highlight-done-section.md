@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:25
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:26
+- Duração: 00:01
 
 ## Objetivo
 Atualizar o viewer para destacar a seção "O que foi feito" em cada task.
@@ -26,3 +26,7 @@ Atualizar o viewer para destacar a seção "O que foi feito" em cada task.
 
 ## Evidências/Logs
 - `tasks/tasks-viewer.html` atualizado.
+
+## O que foi feito
+- Viewer atualizado para destacar a seção "O que foi feito".
+
