@@ -14,6 +14,9 @@
       --muted: #6b7280;
       --border: #e5e7eb;
       --accent: #2563eb;
+      --done-bg: #ecfdf3;
+      --done-border: #bbf7d0;
+      --done-ink: #166534;
     }
 
     body {
@@ -73,6 +76,23 @@
     .meta {
       font-size: 0.85rem;
       color: var(--muted);
+    }
+
+    .done-section {
+      border: 1px solid var(--done-border);
+      background: var(--done-bg);
+      color: var(--done-ink);
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 16px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 0.9rem;
+    }
+
+    .done-title {
+      font-weight: 600;
+      margin-bottom: 6px;
     }
   </style>
 </head>
@@ -161,6 +181,18 @@
       return { title, start, end, duration, status };
     }
 
+    function splitDoneSection(content) {
+      const marker = '## O que foi feito';
+      const idx = content.indexOf(marker);
+      if (idx === -1) {
+        return { main: content, done: null };
+      }
+
+      const main = content.slice(0, idx).trimEnd();
+      const done = content.slice(idx + marker.length).trim();
+      return { main, done };
+    }
+
     function render(items) {
       list.innerHTML = '';
       if (!items.length) {
@@ -196,7 +228,13 @@
           </h2>
           <div id="collapse-${itemId}" class="accordion-collapse collapse" aria-labelledby="heading-${itemId}">
             <div class="accordion-body">
-              <div class="task-body">${t.content}</div>
+              <div class="task-body">${t.sections.main}</div>
+              ${t.sections.done ? `
+                <div class="done-section">
+                  <div class="done-title">O que foi feito</div>
+                  <div>${t.sections.done}</div>
+                </div>
+              ` : ''}
             </div>
           </div>
         `;
@@ -216,7 +254,7 @@
           const r = await fetch(name, { cache: 'no-store' });
           if (!r.ok) continue;
           const text = await r.text();
-          loaded.push({ name, content: text, meta: parseMeta(text) });
+          loaded.push({ name, content: text, meta: parseMeta(text), sections: splitDoneSection(text) });
         }
 
         tasks = loaded.sort((a, b) => a.name.localeCompare(b.name));
@@ -234,7 +272,7 @@
       for (const file of files) {
         if (!file.name.toLowerCase().endsWith('.md')) continue;
         const text = await file.text();
-        loaded.push({ name: file.name, content: text, meta: parseMeta(text) });
+        loaded.push({ name: file.name, content: text, meta: parseMeta(text), sections: splitDoneSection(text) });
       }
 
       tasks = loaded.sort((a, b) => a.name.localeCompare(b.name));
