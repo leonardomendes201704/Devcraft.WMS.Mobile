@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 13:14
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 13:17
+- Duração: 00:03
 
 ## Objetivo
 Adicionar efeito ripple real com biblioteca gratuita e reforçar o visual glass/liquid dos cards.
@@ -34,3 +34,4 @@ Adicionar efeito ripple real com biblioteca gratuita e reforçar o visual glass/
 
 ## O que foi feito
 - Task criada para ripple e ajustes glass.
+
