@@ -4,6 +4,7 @@ namespace HelloWorld;
 
 public partial class ContextSelectionPage : ContentPage
 {
+	const string CustomerHeader = "X-Customer-Id";
 	readonly ObservableCollection<CustomerItem> _customers = new();
 	readonly ObservableCollection<WarehouseItem> _warehouses = new();
 
@@ -14,6 +15,7 @@ public partial class ContextSelectionPage : ContentPage
 		CustomerPicker.ItemDisplayBinding = new Binding(nameof(CustomerItem.Name));
 		WarehousePicker.ItemsSource = _warehouses;
 		WarehousePicker.ItemDisplayBinding = new Binding(nameof(WarehouseItem.Name));
+		CustomerPicker.SelectedIndexChanged += async (_, _) => await LoadWarehousesAsync();
 		Loaded += async (_, _) => await LoadAsync();
 	}
 
@@ -34,8 +36,28 @@ public partial class ContextSelectionPage : ContentPage
 			if (_customers.Count > 0)
 				CustomerPicker.SelectedIndex = 0;
 
-			var warehouses = await ApiClient.GetAsync<PagedResult<WarehouseItem>>("api/warehouses?pageNumber=1&pageSize=100");
-			_warehouses.Clear();
+			await LoadWarehousesAsync();
+			ContinueBtn.IsEnabled = _warehouses.Count > 0 && _customers.Count > 0;
+		}
+		catch (Exception ex)
+		{
+			StatusLabel.Text = $"Falha ao carregar contexto: {ex.Message}";
+		}
+	}
+
+	async Task LoadWarehousesAsync()
+	{
+		_warehouses.Clear();
+		WarehousePicker.SelectedIndex = -1;
+
+		if (CustomerPicker.SelectedItem is not CustomerItem customer)
+			return;
+
+		try
+		{
+			var headers = new Dictionary<string, string?> { [CustomerHeader] = customer.Id.ToString() };
+			var warehouses = await ApiClient.GetAsync<PagedResult<WarehouseItem>>(
+				"api/warehouses?pageNumber=1&pageSize=100", headers);
 			foreach (var w in warehouses?.Items ?? Array.Empty<WarehouseItem>())
 			{
 				_warehouses.Add(w);
@@ -43,12 +65,10 @@ public partial class ContextSelectionPage : ContentPage
 
 			if (_warehouses.Count > 0)
 				WarehousePicker.SelectedIndex = 0;
-
-			ContinueBtn.IsEnabled = true;
 		}
 		catch (Exception ex)
 		{
-			StatusLabel.Text = $"Falha ao carregar contexto: {ex.Message}";
+			StatusLabel.Text = $"Falha ao carregar armazéns: {ex.Message}";
 		}
 	}
 

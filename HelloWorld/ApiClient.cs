@@ -8,20 +8,22 @@ public static class ApiClient
 {
 	static readonly HttpClient Http = new();
 
-	public static async Task<T?> GetAsync<T>(string path)
+	public static async Task<T?> GetAsync<T>(string path, IDictionary<string, string?>? headers = null)
 	{
 		using var request = new HttpRequestMessage(HttpMethod.Get, BuildUrl(path));
 		await AddAuthHeaderAsync(request);
+		AddCustomHeaders(request, headers);
 		using var response = await Http.SendAsync(request);
 		response.EnsureSuccessStatusCode();
 		var json = await response.Content.ReadAsStringAsync();
 		return JsonSerializer.Deserialize<T>(json, JsonOptions);
 	}
 
-	public static async Task<T?> PostAsync<T>(string path, object payload)
+	public static async Task<T?> PostAsync<T>(string path, object payload, IDictionary<string, string?>? headers = null)
 	{
 		using var request = new HttpRequestMessage(HttpMethod.Post, BuildUrl(path));
 		await AddAuthHeaderAsync(request);
+		AddCustomHeaders(request, headers);
 		request.Content = JsonContent.Create(payload);
 		using var response = await Http.SendAsync(request);
 		response.EnsureSuccessStatusCode();
@@ -35,6 +37,20 @@ public static class ApiClient
 		if (!string.IsNullOrWhiteSpace(token))
 		{
 			request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+		}
+	}
+
+	static void AddCustomHeaders(HttpRequestMessage request, IDictionary<string, string?>? headers)
+	{
+		if (headers is null)
+			return;
+
+		foreach (var pair in headers)
+		{
+			if (!string.IsNullOrWhiteSpace(pair.Value))
+			{
+				request.Headers.TryAddWithoutValidation(pair.Key, pair.Value);
+			}
 		}
 	}
 
