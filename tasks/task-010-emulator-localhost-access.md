@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:10
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:18
+- Duração: 00:08
 
 ## Objetivo
 Responder como acessar uma API rodando na máquina host a partir do app no emulador Android.
@@ -24,3 +24,4 @@ Responder como acessar uma API rodando na máquina host a partir do app no emula
 
 ## Evidências/Logs
 - Orientação textual fornecida ao usuário.
+

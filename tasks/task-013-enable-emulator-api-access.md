@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:15
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:18
+- Duração: 00:03
 
 ## Objetivo
 Configurar API para aceitar conexões externas e ajustar app MAUI para consumir a API via Android Emulator.
@@ -31,3 +31,4 @@ Configurar API para aceitar conexões externas e ajustar app MAUI para consumir 
 
 ## Evidências/Logs
 - URL utilizada e resultado exibido no app.
+

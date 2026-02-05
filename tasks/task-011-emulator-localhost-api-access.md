@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:15
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:18
+- Duração: 00:03
 
 ## Objetivo
 Registrar a orientação de acesso à API local a partir do Android Emulator usando `10.0.2.2`.
@@ -23,3 +23,4 @@ Registrar a orientação de acesso à API local a partir do Android Emulator usa
 
 ## Evidências/Logs
 - Resposta ao usuário com URL correta.
+
