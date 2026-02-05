@@ -24,7 +24,7 @@ public partial class ContextSelectionPage : ContentPage
 
 		try
 		{
-			var customers = await ApiClient.GetAsync<PagedResult<CustomerItem>>("api/customers?pageNumber=1&pageSize=200");
+			var customers = await ApiClient.GetAsync<PagedResult<CustomerItem>>("api/customers?pageNumber=1&pageSize=100");
 			_customers.Clear();
 			foreach (var c in customers?.Items ?? Array.Empty<CustomerItem>())
 			{
@@ -34,7 +34,7 @@ public partial class ContextSelectionPage : ContentPage
 			if (_customers.Count > 0)
 				CustomerPicker.SelectedIndex = 0;
 
-			var warehouses = await ApiClient.GetAsync<PagedResult<WarehouseItem>>("api/warehouses?pageNumber=1&pageSize=200");
+			var warehouses = await ApiClient.GetAsync<PagedResult<WarehouseItem>>("api/warehouses?pageNumber=1&pageSize=100");
 			_warehouses.Clear();
 			foreach (var w in warehouses?.Items ?? Array.Empty<WarehouseItem>())
 			{
