@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:00
-- Fim: 2026-02-05 12:08
-- Duração: 00:08
+- Fim: 2026-02-05 12:09
+- Duração: 00:09
 
 ## Objetivo
 Exibir aviso quando o carregamento automático falhar e incluir instruções para subir um servidor local simples.
@@ -27,4 +27,5 @@ Exibir aviso quando o carregamento automático falhar e incluir instruções par
 
 ## Evidências/Logs
 - `tasks/tasks-viewer.html` atualizado.
+
 
