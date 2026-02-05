@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:46
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:47
+- Duração: 00:01
 
 ## Objetivo
 Dar à tela de cards uma aparência de app moderna no estilo Google Pixel.
@@ -30,3 +30,4 @@ Dar à tela de cards uma aparência de app moderna no estilo Google Pixel.
 
 ## O que foi feito
 - Task criada para atualização visual.
+
