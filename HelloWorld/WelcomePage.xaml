@@ -15,13 +15,13 @@
 
     <ContentPage.Resources>
         <Style x:Key="GlassCard" TargetType="Border">
-            <Setter Property="Stroke" Value="#66FFFFFF" />
+            <Setter Property="Stroke" Value="#80FFFFFF" />
             <Setter Property="StrokeThickness" Value="1" />
             <Setter Property="Background">
                 <Setter.Value>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="#40FFFFFF" Offset="0.0" />
-                        <GradientStop Color="#20FFFFFF" Offset="1.0" />
+                        <GradientStop Color="#55FFFFFF" Offset="0.0" />
+                        <GradientStop Color="#1FFFFFFF" Offset="1.0" />
                     </LinearGradientBrush>
                 </Setter.Value>
             </Setter>
@@ -33,19 +33,19 @@
             <Setter Property="Padding" Value="14" />
             <Setter Property="Shadow">
                 <Setter.Value>
-                    <Shadow Brush="#80000000" Offset="0,8" Radius="16" Opacity="0.35" />
+                    <Shadow Brush="#99000000" Offset="0,10" Radius="20" Opacity="0.45" />
                 </Setter.Value>
             </Setter>
         </Style>
 
         <Style x:Key="GlassHeader" TargetType="Border">
-            <Setter Property="Stroke" Value="#80FFFFFF" />
+            <Setter Property="Stroke" Value="#99FFFFFF" />
             <Setter Property="StrokeThickness" Value="1" />
             <Setter Property="Background">
                 <Setter.Value>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#60FFFFFF" Offset="0.0" />
-                        <GradientStop Color="#2FFFFFFF" Offset="1.0" />
+                        <GradientStop Color="#70FFFFFF" Offset="0.0" />
+                        <GradientStop Color="#2AFFFFFF" Offset="1.0" />
                     </LinearGradientBrush>
                 </Setter.Value>
             </Setter>
@@ -57,16 +57,32 @@
             <Setter Property="Padding" Value="18" />
             <Setter Property="Shadow">
                 <Setter.Value>
-                    <Shadow Brush="#80000000" Offset="0,10" Radius="20" Opacity="0.35" />
+                    <Shadow Brush="#99000000" Offset="0,12" Radius="22" Opacity="0.45" />
                 </Setter.Value>
             </Setter>
         </Style>
 
         <Style x:Key="GlassRipple" TargetType="sf:SfEffectsView">
             <Setter Property="TouchDownEffects" Value="Ripple" />
-            <Setter Property="RippleBackground" Value="#66FFFFFF" />
-            <Setter Property="RippleDuration" Value="220" />
-            <Setter Property="AnimationDuration" Value="140" />
+            <Setter Property="RippleBackground" Value="#CCFFFFFF" />
+            <Setter Property="RippleDuration" Value="320" />
+            <Setter Property="AnimationDuration" Value="220" />
+            <Setter Property="RippleRadius" Value="140" />
+            <Setter Property="SelectionHighlightColor" Value="#55FFFFFF" />
+        </Style>
+
+        <Style x:Key="GlassShine" TargetType="Grid">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#55FFFFFF" Offset="0.0" />
+                        <GradientStop Color="#10FFFFFF" Offset="0.35" />
+                        <GradientStop Color="#00FFFFFF" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Opacity" Value="0.35" />
+            <Setter Property="InputTransparent" Value="True" />
         </Style>
     </ContentPage.Resources>
 
@@ -96,58 +112,76 @@
 
                 <sf:SfEffectsView Grid.Row="0" Grid.Column="0" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="🧾" FontSize="22" />
-                            <Label Text="Picking (Fila)" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Iniciar separação" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="🧾" FontSize="22" />
+                                <Label Text="Picking (Fila)" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Iniciar separação" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
                 <sf:SfEffectsView Grid.Row="0" Grid.Column="1" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="✅" FontSize="22" />
-                            <Label Text="Conferência" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Validar OS" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="✅" FontSize="22" />
+                                <Label Text="Conferência" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Validar OS" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
 
                 <sf:SfEffectsView Grid.Row="1" Grid.Column="0" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="📦" FontSize="22" />
-                            <Label Text="Packing" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Embalar e etiquetar" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="📦" FontSize="22" />
+                                <Label Text="Packing" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Embalar e etiquetar" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
                 <sf:SfEffectsView Grid.Row="1" Grid.Column="1" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="🚚" FontSize="22" />
-                            <Label Text="Expedição" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Carregar e finalizar" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="🚚" FontSize="22" />
+                                <Label Text="Expedição" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Carregar e finalizar" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
 
                 <sf:SfEffectsView Grid.Row="2" Grid.Column="0" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="📥" FontSize="22" />
-                            <Label Text="Recebimento" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Check-in / ASN" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="📥" FontSize="22" />
+                                <Label Text="Recebimento" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Check-in / ASN" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
                 <sf:SfEffectsView Grid.Row="2" Grid.Column="1" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="🗂️" FontSize="22" />
-                            <Label Text="Putaway" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Endereçar estoque" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="🗂️" FontSize="22" />
+                                <Label Text="Putaway" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Endereçar estoque" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
             </Grid>
@@ -165,39 +199,51 @@
 
                 <sf:SfEffectsView Grid.Row="0" Grid.Column="0" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="📊" FontSize="22" />
-                            <Label Text="Inventário" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Consultar saldo/posição" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="📊" FontSize="22" />
+                                <Label Text="Inventário" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Consultar saldo/posição" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
                 <sf:SfEffectsView Grid.Row="0" Grid.Column="1" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="🔁" FontSize="22" />
-                            <Label Text="Movimentação" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Transferir/ajustar" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="🔁" FontSize="22" />
+                                <Label Text="Movimentação" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Transferir/ajustar" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
 
                 <sf:SfEffectsView Grid.Row="1" Grid.Column="0" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="♻️" FontSize="22" />
-                            <Label Text="Reposição" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Reabastecer" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="♻️" FontSize="22" />
+                                <Label Text="Reposição" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Reabastecer" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
                 <sf:SfEffectsView Grid.Row="1" Grid.Column="1" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="📌" FontSize="22" />
-                            <Label Text="Minhas Tarefas" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Pendências do operador" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="📌" FontSize="22" />
+                                <Label Text="Minhas Tarefas" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Pendências do operador" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
             </Grid>
@@ -215,39 +261,51 @@
 
                 <sf:SfEffectsView Grid.Row="0" Grid.Column="0" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="⚠️" FontSize="22" />
-                            <Label Text="Alertas" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Divergências/erros" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="⚠️" FontSize="22" />
+                                <Label Text="Alertas" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Divergências/erros" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
                 <sf:SfEffectsView Grid.Row="0" Grid.Column="1" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="📈" FontSize="22" />
-                            <Label Text="KPIs rápidos" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Hoje: separadas / conferidas / expedidas" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="📈" FontSize="22" />
+                                <Label Text="KPIs rápidos" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Hoje: separadas / conferidas / expedidas" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
 
                 <sf:SfEffectsView Grid.Row="1" Grid.Column="0" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="🧩" FontSize="22" />
-                            <Label Text="Cadastro rápido" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Produto/Lote" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="🧩" FontSize="22" />
+                                <Label Text="Cadastro rápido" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Produto/Lote" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
                 <sf:SfEffectsView Grid.Row="1" Grid.Column="1" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
                     <Border Style="{StaticResource GlassCard}">
-                        <VerticalStackLayout Spacing="6">
-                            <Label Text="🧾" FontSize="22" />
-                            <Label Text="Auditoria" FontAttributes="Bold" TextColor="#F8FAFC" />
-                            <Label Text="Histórico de movimentações" FontSize="12" TextColor="#C7D2FE" />
-                        </VerticalStackLayout>
+                        <Grid>
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="🧾" FontSize="22" />
+                                <Label Text="Auditoria" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                <Label Text="Histórico de movimentações" FontSize="12" TextColor="#C7D2FE" />
+                            </VerticalStackLayout>
+                            <Grid Style="{StaticResource GlassShine}" />
+                        </Grid>
                     </Border>
                 </sf:SfEffectsView>
             </Grid>

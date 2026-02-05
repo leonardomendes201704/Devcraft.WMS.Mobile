@@ -4,6 +4,7 @@
 public partial class WelcomePage : ContentPage
 {
 	string _email = string.Empty;
+	bool _isAnimating;
 
 	public string Email
 	{
@@ -30,8 +31,23 @@ public partial class WelcomePage : ContentPage
 		}
 	}
 
-	void OnCardTapped(object? sender, EventArgs e)
+	async void OnCardTapped(object? sender, EventArgs e)
 	{
-		// Placeholder para navegação futura
+		if (_isAnimating || sender is not VisualElement card)
+			return;
+
+		try
+		{
+			_isAnimating = true;
+			await card.ScaleTo(1.02, 60, Easing.CubicOut);
+			await card.RotateTo(0.6, 50, Easing.CubicOut);
+			await card.RotateTo(-0.6, 50, Easing.CubicOut);
+			await card.RotateTo(0, 50, Easing.CubicOut);
+			await card.ScaleTo(1.0, 80, Easing.CubicIn);
+		}
+		finally
+		{
+			_isAnimating = false;
+		}
 	}
 }
