@@ -50,11 +50,11 @@ public partial class WelcomePage : ContentPage
 		try
 		{
 			_isAnimating = true;
-			await card.ScaleTo(1.02, 60, Easing.CubicOut);
-			await card.RotateTo(0.6, 50, Easing.CubicOut);
-			await card.RotateTo(-0.6, 50, Easing.CubicOut);
-			await card.RotateTo(0, 50, Easing.CubicOut);
-			await card.ScaleTo(1.0, 80, Easing.CubicIn);
+			await card.ScaleToAsync(1.02, 60, Easing.CubicOut);
+			await card.RotateToAsync(0.6, 50, Easing.CubicOut);
+			await card.RotateToAsync(-0.6, 50, Easing.CubicOut);
+			await card.RotateToAsync(0, 50, Easing.CubicOut);
+			await card.ScaleToAsync(1.0, 80, Easing.CubicIn);
 		}
 		finally
 		{
