@@ -12,5 +12,6 @@
   "task-011-emulator-localhost-api-access.md",
   "task-012-mobile-access-local-api.md",
   "task-013-enable-emulator-api-access.md",
-  "task-014-auto-close-previous-task.md"
+  "task-014-auto-close-previous-task.md",
+  "task-015-add-done-section-directive.md"
 ]
