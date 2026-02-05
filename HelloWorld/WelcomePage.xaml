@@ -3,21 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorld.WelcomePage"
              Title="Menu"
-             BackgroundColor="#F6F7FB">
+             BackgroundColor="#0F172A">
 
     <ScrollView>
         <VerticalStackLayout Padding="20,16" Spacing="18">
-            <Frame Padding="16" CornerRadius="20" BackgroundColor="#FFFFFF" HasShadow="True">
+            <Frame Padding="18" CornerRadius="22" HasShadow="True"
+                   BackgroundColor="#33FFFFFF" BorderColor="#66FFFFFF">
                 <VerticalStackLayout Spacing="6">
-                    <Label Text="Olá" FontSize="22" FontAttributes="Bold" TextColor="#111827" />
+                    <Label Text="Olá" FontSize="22" FontAttributes="Bold" TextColor="#F8FAFC" />
                     <Label x:Name="WelcomeLabel"
                            Text="Bem-vindo!"
                            FontSize="16"
-                           TextColor="#6B7280" />
+                           TextColor="#CBD5F5" />
                 </VerticalStackLayout>
             </Frame>
 
-            <Label Text="Essenciais" FontSize="16" FontAttributes="Bold" TextColor="#111827" />
+            <Label Text="Essenciais" FontSize="16" FontAttributes="Bold" TextColor="#E2E8F0" />
             <Grid ColumnSpacing="12" RowSpacing="12">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -29,53 +30,59 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <Frame Grid.Row="0" Grid.Column="0" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="0" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🧾" FontSize="22" />
-                        <Label Text="Picking (Fila)" FontAttributes="Bold" />
-                        <Label Text="Iniciar separação" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Picking (Fila)" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Iniciar separação" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
-                <Frame Grid.Row="0" Grid.Column="1" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="0" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="✅" FontSize="22" />
-                        <Label Text="Conferência" FontAttributes="Bold" />
-                        <Label Text="Validar OS" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Conferência" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Validar OS" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
 
-                <Frame Grid.Row="1" Grid.Column="0" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="1" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="📦" FontSize="22" />
-                        <Label Text="Packing" FontAttributes="Bold" />
-                        <Label Text="Embalar e etiquetar" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Packing" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Embalar e etiquetar" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
-                <Frame Grid.Row="1" Grid.Column="1" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="1" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🚚" FontSize="22" />
-                        <Label Text="Expedição" FontAttributes="Bold" />
-                        <Label Text="Carregar e finalizar" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Expedição" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Carregar e finalizar" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
 
-                <Frame Grid.Row="2" Grid.Column="0" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="2" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="📥" FontSize="22" />
-                        <Label Text="Recebimento" FontAttributes="Bold" />
-                        <Label Text="Check-in / ASN" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Recebimento" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Check-in / ASN" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
-                <Frame Grid.Row="2" Grid.Column="1" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="2" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🗂️" FontSize="22" />
-                        <Label Text="Putaway" FontAttributes="Bold" />
-                        <Label Text="Endereçar estoque" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Putaway" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Endereçar estoque" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
             </Grid>
 
-            <Label Text="Suporte rápido" FontSize="16" FontAttributes="Bold" TextColor="#111827" />
+            <Label Text="Suporte rápido" FontSize="16" FontAttributes="Bold" TextColor="#E2E8F0" />
             <Grid ColumnSpacing="12" RowSpacing="12">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -86,38 +93,42 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <Frame Grid.Row="0" Grid.Column="0" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="0" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="📊" FontSize="22" />
-                        <Label Text="Inventário" FontAttributes="Bold" />
-                        <Label Text="Consultar saldo/posição" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Inventário" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Consultar saldo/posição" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
-                <Frame Grid.Row="0" Grid.Column="1" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="0" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🔁" FontSize="22" />
-                        <Label Text="Movimentação" FontAttributes="Bold" />
-                        <Label Text="Transferir/ajustar" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Movimentação" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Transferir/ajustar" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
 
-                <Frame Grid.Row="1" Grid.Column="0" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="1" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="♻️" FontSize="22" />
-                        <Label Text="Reposição" FontAttributes="Bold" />
-                        <Label Text="Reabastecer" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Reposição" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Reabastecer" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
-                <Frame Grid.Row="1" Grid.Column="1" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="1" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="📌" FontSize="22" />
-                        <Label Text="Minhas Tarefas" FontAttributes="Bold" />
-                        <Label Text="Pendências do operador" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Minhas Tarefas" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Pendências do operador" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
             </Grid>
 
-            <Label Text="Gestão/visibilidade" FontSize="16" FontAttributes="Bold" TextColor="#111827" />
+            <Label Text="Gestão/visibilidade" FontSize="16" FontAttributes="Bold" TextColor="#E2E8F0" />
             <Grid ColumnSpacing="12" RowSpacing="12">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -128,33 +139,37 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <Frame Grid.Row="0" Grid.Column="0" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="0" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="⚠️" FontSize="22" />
-                        <Label Text="Alertas" FontAttributes="Bold" />
-                        <Label Text="Divergências/erros" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Alertas" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Divergências/erros" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
-                <Frame Grid.Row="0" Grid.Column="1" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="0" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="📈" FontSize="22" />
-                        <Label Text="KPIs rápidos" FontAttributes="Bold" />
-                        <Label Text="Hoje: separadas / conferidas / expedidas" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="KPIs rápidos" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Hoje: separadas / conferidas / expedidas" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
 
-                <Frame Grid.Row="1" Grid.Column="0" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="1" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🧩" FontSize="22" />
-                        <Label Text="Cadastro rápido" FontAttributes="Bold" />
-                        <Label Text="Produto/Lote" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Cadastro rápido" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Produto/Lote" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
-                <Frame Grid.Row="1" Grid.Column="1" Padding="14" CornerRadius="18" BackgroundColor="#FFFFFF" HasShadow="True">
+                <Frame Grid.Row="1" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
+                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🧾" FontSize="22" />
-                        <Label Text="Auditoria" FontAttributes="Bold" />
-                        <Label Text="Histórico de movimentações" FontSize="12" TextColor="#6B7280" />
+                        <Label Text="Auditoria" FontAttributes="Bold" TextColor="#F8FAFC" />
+                        <Label Text="Histórico de movimentações" FontSize="12" TextColor="#CBD5F5" />
                     </VerticalStackLayout>
                 </Frame>
             </Grid>
