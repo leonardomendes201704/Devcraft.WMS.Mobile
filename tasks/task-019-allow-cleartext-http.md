@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:30
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:31
+- Duração: 00:01
 
 ## Objetivo
 Habilitar tráfego HTTP (cleartext) no app Android para evitar `ConnectionFailure` ao acessar a API local.
@@ -27,3 +27,7 @@ Habilitar tráfego HTTP (cleartext) no app Android para evitar `ConnectionFailur
 
 ## Evidências/Logs
 - Status HTTP exibido no app.
+
+## O que foi feito
+- Permitido HTTP no Android Manifest para evitar ConnectionFailure.
+
