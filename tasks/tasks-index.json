@@ -17,5 +17,6 @@
   "task-016-add-done-sections-existing.md",
   "task-017-highlight-done-section.md",
   "task-018-fix-connectionfailure.md",
-  "task-019-allow-cleartext-http.md"
+  "task-019-allow-cleartext-http.md",
+  "task-020-login-and-welcome-screen.md"
 ]
