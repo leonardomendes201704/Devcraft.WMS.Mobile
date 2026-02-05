@@ -12,6 +12,21 @@ public partial class LoginPage : ContentPage
 		InitializeComponent();
 		EmailEntry.Text = "admin@admin.com.br";
 		PasswordEntry.Text = "Naotemsenha0!";
+		UseDeviceUrlSwitch.IsToggled = AppSettings.UseDeviceUrl;
+		UpdateApiUrlLabel();
+	}
+
+	void OnUseDeviceUrlToggled(object? sender, ToggledEventArgs e)
+	{
+		AppSettings.UseDeviceUrl = e.Value;
+		UpdateApiUrlLabel();
+	}
+
+	void UpdateApiUrlLabel()
+	{
+		ApiUrlLabel.Text = AppSettings.UseDeviceUrl
+			? $"API: {AppSettings.DeviceApiUrl}"
+			: "API: http://10.0.2.2:5137";
 	}
 
 	private async void OnLoginClicked(object? sender, EventArgs e)
@@ -62,7 +77,7 @@ public partial class LoginPage : ContentPage
 	private static string GetApiBaseUrl()
 	{
 #if ANDROID
-		return "http://10.0.2.2:5137";
+		return AppSettings.UseDeviceUrl ? AppSettings.DeviceApiUrl : "http://10.0.2.2:5137";
 #else
 		return "http://localhost:5137";
 #endif

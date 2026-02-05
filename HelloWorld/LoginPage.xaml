@@ -18,6 +18,12 @@
                    Placeholder="Senha"
                    IsPassword="True" />
 
+            <HorizontalStackLayout Spacing="12">
+                <Label Text="Usar URL do celular" VerticalOptions="Center" />
+                <Switch x:Name="UseDeviceUrlSwitch" Toggled="OnUseDeviceUrlToggled" />
+            </HorizontalStackLayout>
+            <Label x:Name="ApiUrlLabel" Text="API: http://10.0.2.2:5137" FontSize="12" TextColor="#6B7280" />
+
             <Button x:Name="LoginBtn"
                     Text="Entrar"
                     Clicked="OnLoginClicked" />

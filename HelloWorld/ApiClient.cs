@@ -63,6 +63,8 @@ public static class ApiClient
 	static string GetApiBaseUrl()
 	{
 #if ANDROID
+		if (AppSettings.UseDeviceUrl)
+			return AppSettings.DeviceApiUrl;
 		return "http://10.0.2.2:5137";
 #else
 		return "http://localhost:5137";
