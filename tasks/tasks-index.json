@@ -20,5 +20,7 @@
   "task-019-allow-cleartext-http.md",
   "task-020-login-and-welcome-screen.md",
   "task-021-persist-auth-token.md",
-  "task-022-welcome-menu-cards.md"
+  "task-022-welcome-menu-cards.md",
+  "task-023-generate-apk-physical-device.md",
+  "task-024-pixel-style-menu.md"
 ]
