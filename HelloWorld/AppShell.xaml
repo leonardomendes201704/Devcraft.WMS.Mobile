@@ -9,4 +9,14 @@
         Title="Login"
         ContentTemplate="{DataTemplate local:LoginPage}"
         Route="LoginPage" />
+
+    <ShellContent
+        Title="Contexto"
+        ContentTemplate="{DataTemplate local:ContextSelectionPage}"
+        Route="ContextSelectionPage" />
+
+    <ShellContent
+        Title="Menu"
+        ContentTemplate="{DataTemplate local:WelcomePage}"
+        Route="WelcomePage" />
 </Shell>

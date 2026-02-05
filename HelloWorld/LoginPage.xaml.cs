@@ -44,10 +44,10 @@ public partial class LoginPage : ContentPage
 				await AuthStorage.SaveTokenAsync(result.Token, result.Email ?? payload.Email);
 			}
 
-			await Shell.Current.GoToAsync(nameof(WelcomePage), new Dictionary<string, object>
-			{
-				["email"] = result?.Email ?? payload.Email
-			});
+			var hasContext = await AuthStorage.GetCustomerIdAsync() is not null
+				&& await AuthStorage.GetWarehouseIdAsync() is not null;
+
+			await Shell.Current.GoToAsync($"//{(hasContext ? nameof(WelcomePage) : nameof(ContextSelectionPage))}");
 		}
 		catch (Exception ex)
 		{

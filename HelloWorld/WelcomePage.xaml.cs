@@ -29,6 +29,17 @@ public partial class WelcomePage : ContentPage
 		{
 			WelcomeLabel.Text = $"Bem-vindo, {storedEmail}!";
 		}
+
+		var customer = await AuthStorage.GetCustomerNameAsync();
+		var warehouse = await AuthStorage.GetWarehouseNameAsync();
+		if (!string.IsNullOrWhiteSpace(customer) && !string.IsNullOrWhiteSpace(warehouse))
+		{
+			ContextLabel.Text = $"Contexto: {customer} • {warehouse}";
+		}
+		else
+		{
+			ContextLabel.Text = "Contexto: não selecionado";
+		}
 	}
 
 	async void OnCardTapped(object? sender, EventArgs e)

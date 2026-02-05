@@ -89,12 +89,10 @@
     <ScrollView>
         <VerticalStackLayout Padding="20,16" Spacing="18">
             <Border Style="{StaticResource GlassHeader}">
-                <VerticalStackLayout Spacing="6">
+                <VerticalStackLayout Spacing="4">
                     <Label Text="Olá" FontSize="22" FontAttributes="Bold" TextColor="#F8FAFC" />
-                    <Label x:Name="WelcomeLabel"
-                           Text="Bem-vindo!"
-                           FontSize="16"
-                           TextColor="#C7D2FE" />
+                    <Label x:Name="WelcomeLabel" Text="Bem-vindo!" FontSize="16" TextColor="#C7D2FE" />
+                    <Label x:Name="ContextLabel" Text="Contexto: -" FontSize="12" TextColor="#E2E8F0" />
                 </VerticalStackLayout>
             </Border>
 
