@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:19
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:20
+- Duração: 00:01
 
 ## Objetivo
 Adicionar diretriz para concluir automaticamente a task anterior ao criar uma nova, caso ela não tenha data de fim.
@@ -25,3 +25,4 @@ Adicionar diretriz para concluir automaticamente a task anterior ao criar uma no
 
 ## Evidências/Logs
 - `AGENTS.md` atualizado.
+
