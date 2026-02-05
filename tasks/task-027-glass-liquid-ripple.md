@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:58
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 13:00
+- Duração: 00:02
 
 ## Objetivo
 Melhorar o visual glass/liquid dos cards e adicionar feedback de toque (ripple/press).
@@ -31,3 +31,4 @@ Melhorar o visual glass/liquid dos cards e adicionar feedback de toque (ripple/p
 
 ## O que foi feito
 - Task criada para ajustes de glass/liquid e ripple.
+
