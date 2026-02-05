@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 20:26
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 20:29
+- Duração: 00:03
 
 ## Objetivo
 Corrigir falha de desserialização do JSON de warehouses no app.
@@ -28,5 +28,4 @@ Corrigir falha de desserialização do JSON de warehouses no app.
 ## Evidências/Logs
 - Lista carregada no app.
 
-## O que foi feito
-- Task criada para corrigir desserialização.
+## O que foi feito\r\n- `HelloWorld/ContextSelectionPage.xaml.cs`: alterado `WarehouseItem.WarehouseType` de `string` para `int` para casar com JSON da API.\r\n- Build Android validado (net10.0-android).\r\n
