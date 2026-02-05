@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 20:46
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 20:49
+- Duração: 00:03
 
 ## Objetivo
 Permitir alternar a URL base da API entre emulador e dispositivo físico via chave/configuração.
@@ -30,5 +30,4 @@ Permitir alternar a URL base da API entre emulador e dispositivo físico via cha
 ## Evidências/Logs
 - URL selecionada refletida nas chamadas.
 
-## O que foi feito
-- Task criada para alternância de URL.
+## O que foi feito\r\n- `HelloWorld/AppSettings.cs`: criada configuração persistente para alternar URL (emulador vs dispositivo).\r\n- `HelloWorld/ApiClient.cs`: usa a URL configurada para Android quando ativada.\r\n- `HelloWorld/LoginPage.xaml` e `HelloWorld/LoginPage.xaml.cs`: adicionados toggle e label para alternância.\r\n- Build Android validado (net10.0-android).\r\n
