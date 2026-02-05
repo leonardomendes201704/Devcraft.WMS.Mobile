@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 11:53
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:08
+- Duração: 00:15
 
 ## Objetivo
 Renomear as tasks existentes para numeração sequencial e adicionar controle de tempo em cada uma.
@@ -28,3 +28,4 @@ Renomear as tasks existentes para numeração sequencial e adicionar controle de
 
 ## Evidências/Logs
 - Listagem de `tasks/` e conteúdo atualizado das tasks.
+

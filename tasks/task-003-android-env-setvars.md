@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 11:52
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:08
+- Duração: 00:16
 
 
 ## Objetivo
@@ -33,4 +33,5 @@ Definir `ANDROID_SDK_ROOT`, `ANDROID_HOME` e `JAVA_HOME` para que o Visual Studi
 
 ## Evidências/Logs
 - Saída de consulta às variáveis após set.
+
 

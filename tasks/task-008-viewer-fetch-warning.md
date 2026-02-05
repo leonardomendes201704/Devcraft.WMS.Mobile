@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:00
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:08
+- Duração: 00:08
 
 ## Objetivo
 Exibir aviso quando o carregamento automático falhar e incluir instruções para subir um servidor local simples.
@@ -27,3 +27,4 @@ Exibir aviso quando o carregamento automático falhar e incluir instruções par
 
 ## Evidências/Logs
 - `tasks/tasks-viewer.html` atualizado.
+

@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 11:52
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:08
+- Duração: 00:16
 
 ## Objetivo
 Incluir no AGENTS.md a diretriz de que as tasks devem ser numeradas sequencialmente e conter hora de início, fim e duração.
@@ -29,3 +29,4 @@ Incluir no AGENTS.md a diretriz de que as tasks devem ser numeradas sequencialme
 
 ## Evidências/Logs
 - Conteúdo atualizado de `AGENTS.md`.
+

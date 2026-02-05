@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 11:54
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:08
+- Duração: 00:14
 
 ## Objetivo
 Criar um HTML dentro de `tasks/` para visualizar arquivos de task com layout clean, minimalista/moderno, tema claro, com ícones e fácil uso.
@@ -30,3 +30,4 @@ Criar um HTML dentro de `tasks/` para visualizar arquivos de task com layout cle
 
 ## Evidências/Logs
 - Arquivo `tasks/tasks-viewer.html` criado.
+

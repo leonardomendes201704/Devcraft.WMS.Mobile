@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:05
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:08
+- Duração: 00:03
 
 ## Objetivo
 Criar repositório Git na raiz e realizar commit e push das alterações.
@@ -31,3 +31,4 @@ Criar repositório Git na raiz e realizar commit e push das alterações.
 
 ## Evidências/Logs
 - Saída dos comandos git.
+
