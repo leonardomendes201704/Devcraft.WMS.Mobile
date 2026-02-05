@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 19:55
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 20:13
+- Duração: 00:18
 
 ## Objetivo
 Resolver o erro 400 BadRequest ao carregar clientes/armazéns na tela de seleção de contexto.
@@ -30,5 +30,4 @@ Resolver o erro 400 BadRequest ao carregar clientes/armazéns na tela de seleç�
 ## Evidências/Logs
 - Resultado da chamada e lista carregada.
 
-## O que foi feito
-- Task criada para corrigir erro 400.
+## O que foi feito\r\n- Identificado limite de `pageSize` (máx 100) nos validators da API, causando 400.\r\n- `HelloWorld/ContextSelectionPage.xaml.cs`: reduzido `pageSize` de 200 para 100 nas chamadas de customers/warehouses.\r\n- Build Android validado com sucesso (net10.0-android).\r\n
