@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 20:42
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 20:43
+- Duração: 00:01
 
 ## Objetivo
 Esclarecer como verificar compatibilidade de versão Android e como ajustar o minSdk do app.
@@ -30,3 +30,4 @@ Esclarecer como verificar compatibilidade de versão Android e como ajustar o mi
 
 ## O que foi feito
 - Task criada para orientação de compatibilidade.
+
