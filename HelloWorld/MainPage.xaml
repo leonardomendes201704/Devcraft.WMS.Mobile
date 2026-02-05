@@ -30,6 +30,17 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="ApiBtn"
+                Text="Testar API local"
+                Clicked="OnApiClicked"
+                HorizontalOptions="Fill" />
+
+            <Label
+                x:Name="ApiStatus"
+                Text="Status da API: aguardando..."
+                Style="{StaticResource SubHeadline}" />
         </VerticalStackLayout>
     </ScrollView>
 
