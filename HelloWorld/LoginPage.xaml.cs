@@ -39,6 +39,11 @@ public partial class LoginPage : ContentPage
 				PropertyNameCaseInsensitive = true
 			});
 
+			if (result?.Token is { Length: > 0 })
+			{
+				await AuthStorage.SaveTokenAsync(result.Token, result.Email ?? payload.Email);
+			}
+
 			await Shell.Current.GoToAsync(nameof(WelcomePage), new Dictionary<string, object>
 			{
 				["email"] = result?.Email ?? payload.Email

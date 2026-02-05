@@ -18,5 +18,15 @@ public partial class WelcomePage : ContentPage
 	public WelcomePage()
 	{
 		InitializeComponent();
+		LoadFromStorage();
+	}
+
+	async void LoadFromStorage()
+	{
+		var storedEmail = await AuthStorage.GetEmailAsync();
+		if (!string.IsNullOrWhiteSpace(storedEmail))
+		{
+			WelcomeLabel.Text = $"Bem-vindo, {storedEmail}!";
+		}
 	}
 }

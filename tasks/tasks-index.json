@@ -18,5 +18,6 @@
   "task-017-highlight-done-section.md",
   "task-018-fix-connectionfailure.md",
   "task-019-allow-cleartext-http.md",
-  "task-020-login-and-welcome-screen.md"
+  "task-020-login-and-welcome-screen.md",
+  "task-021-persist-auth-token.md"
 ]
