@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 13:22
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 13:24
+- Duração: 00:02
 
 ## Objetivo
 Aumentar intensidade/tamanho do ripple, adicionar brilho para reforçar efeito vidro e criar efeito de tremilique no toque.
@@ -34,3 +34,4 @@ Aumentar intensidade/tamanho do ripple, adicionar brilho para reforçar efeito v
 
 ## O que foi feito
 - Task criada para ajuste de ripple e brilho.
+
