@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:53
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:55
+- Duração: 00:02
 
 ## Objetivo
 Dar ao menu um visual "glass" (glassmorphism) inspirado na referência enviada.
@@ -30,3 +30,4 @@ Dar ao menu um visual "glass" (glassmorphism) inspirado na referência enviada.
 
 ## O que foi feito
 - Task criada para estilo glass.
+
