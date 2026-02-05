@@ -2,21 +2,77 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorld.WelcomePage"
-             Title="Menu"
-             BackgroundColor="#0F172A">
+             Title="Menu">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#0B1220" Offset="0.0" />
+            <GradientStop Color="#0F1B3D" Offset="0.5" />
+            <GradientStop Color="#0B2A4F" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.Resources>
+        <Style x:Key="GlassCard" TargetType="Border">
+            <Setter Property="Stroke" Value="#66FFFFFF" />
+            <Setter Property="StrokeThickness" Value="1" />
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#33FFFFFF" Offset="0.0" />
+                        <GradientStop Color="#1FFFFFFF" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="StrokeShape">
+                <Setter.Value>
+                    <RoundRectangle CornerRadius="20" />
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="14" />
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <Shadow Brush="#80000000" Offset="0,6" Radius="12" Opacity="0.35" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="GlassHeader" TargetType="Border">
+            <Setter Property="Stroke" Value="#80FFFFFF" />
+            <Setter Property="StrokeThickness" Value="1" />
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="#55FFFFFF" Offset="0.0" />
+                        <GradientStop Color="#2FFFFFFF" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="StrokeShape">
+                <Setter.Value>
+                    <RoundRectangle CornerRadius="24" />
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="18" />
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <Shadow Brush="#80000000" Offset="0,8" Radius="16" Opacity="0.35" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
 
     <ScrollView>
         <VerticalStackLayout Padding="20,16" Spacing="18">
-            <Frame Padding="18" CornerRadius="22" HasShadow="True"
-                   BackgroundColor="#33FFFFFF" BorderColor="#66FFFFFF">
+            <Border Style="{StaticResource GlassHeader}">
                 <VerticalStackLayout Spacing="6">
                     <Label Text="Olá" FontSize="22" FontAttributes="Bold" TextColor="#F8FAFC" />
                     <Label x:Name="WelcomeLabel"
                            Text="Bem-vindo!"
                            FontSize="16"
-                           TextColor="#CBD5F5" />
+                           TextColor="#C7D2FE" />
                 </VerticalStackLayout>
-            </Frame>
+            </Border>
 
             <Label Text="Essenciais" FontSize="16" FontAttributes="Bold" TextColor="#E2E8F0" />
             <Grid ColumnSpacing="12" RowSpacing="12">
@@ -30,56 +86,50 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <Frame Grid.Row="0" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🧾" FontSize="22" />
                         <Label Text="Picking (Fila)" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Iniciar separação" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Iniciar separação" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
-                <Frame Grid.Row="0" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="✅" FontSize="22" />
                         <Label Text="Conferência" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Validar OS" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Validar OS" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
+                </Border>
 
-                <Frame Grid.Row="1" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="📦" FontSize="22" />
                         <Label Text="Packing" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Embalar e etiquetar" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Embalar e etiquetar" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
-                <Frame Grid.Row="1" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                </Border>
+                <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🚚" FontSize="22" />
                         <Label Text="Expedição" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Carregar e finalizar" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Carregar e finalizar" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
+                </Border>
 
-                <Frame Grid.Row="2" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                <Border Grid.Row="2" Grid.Column="0" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="📥" FontSize="22" />
                         <Label Text="Recebimento" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Check-in / ASN" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Check-in / ASN" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
-                <Frame Grid.Row="2" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                </Border>
+                <Border Grid.Row="2" Grid.Column="1" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🗂️" FontSize="22" />
                         <Label Text="Putaway" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Endereçar estoque" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Endereçar estoque" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
+                </Border>
             </Grid>
 
             <Label Text="Suporte rápido" FontSize="16" FontAttributes="Bold" TextColor="#E2E8F0" />
@@ -93,39 +143,35 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <Frame Grid.Row="0" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="📊" FontSize="22" />
                         <Label Text="Inventário" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Consultar saldo/posição" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Consultar saldo/posição" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
-                <Frame Grid.Row="0" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🔁" FontSize="22" />
                         <Label Text="Movimentação" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Transferir/ajustar" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Transferir/ajustar" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
+                </Border>
 
-                <Frame Grid.Row="1" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="♻️" FontSize="22" />
                         <Label Text="Reposição" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Reabastecer" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Reabastecer" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
-                <Frame Grid.Row="1" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                </Border>
+                <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="📌" FontSize="22" />
                         <Label Text="Minhas Tarefas" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Pendências do operador" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Pendências do operador" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
+                </Border>
             </Grid>
 
             <Label Text="Gestão/visibilidade" FontSize="16" FontAttributes="Bold" TextColor="#E2E8F0" />
@@ -139,39 +185,35 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <Frame Grid.Row="0" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="⚠️" FontSize="22" />
                         <Label Text="Alertas" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Divergências/erros" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Divergências/erros" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
-                <Frame Grid.Row="0" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="📈" FontSize="22" />
                         <Label Text="KPIs rápidos" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Hoje: separadas / conferidas / expedidas" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Hoje: separadas / conferidas / expedidas" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
+                </Border>
 
-                <Frame Grid.Row="1" Grid.Column="0" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🧩" FontSize="22" />
                         <Label Text="Cadastro rápido" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Produto/Lote" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Produto/Lote" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
-                <Frame Grid.Row="1" Grid.Column="1" Padding="14" CornerRadius="18" HasShadow="True"
-                       BackgroundColor="#26FFFFFF" BorderColor="#66FFFFFF">
+                </Border>
+                <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource GlassCard}" Tapped="OnCardTapped">
                     <VerticalStackLayout Spacing="6">
                         <Label Text="🧾" FontSize="22" />
                         <Label Text="Auditoria" FontAttributes="Bold" TextColor="#F8FAFC" />
-                        <Label Text="Histórico de movimentações" FontSize="12" TextColor="#CBD5F5" />
+                        <Label Text="Histórico de movimentações" FontSize="12" TextColor="#C7D2FE" />
                     </VerticalStackLayout>
-                </Frame>
+                </Border>
             </Grid>
         </VerticalStackLayout>
     </ScrollView>
