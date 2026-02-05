@@ -29,4 +29,6 @@ Renomear as tasks existentes para numeração sequencial e adicionar controle de
 ## Evidências/Logs
 - Listagem de `tasks/` e conteúdo atualizado das tasks.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
 

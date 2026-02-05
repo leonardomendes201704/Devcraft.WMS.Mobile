@@ -30,4 +30,6 @@ Incluir no AGENTS.md a diretriz de que as tasks devem ser numeradas sequencialme
 ## Evidências/Logs
 - Conteúdo atualizado de `AGENTS.md`.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
 

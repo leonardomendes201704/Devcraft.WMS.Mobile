@@ -34,5 +34,6 @@ Definir `ANDROID_SDK_ROOT`, `ANDROID_HOME` e `JAVA_HOME` para que o Visual Studi
 ## Evidências/Logs
 - Saída de consulta às variáveis após set.
 
-
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
 

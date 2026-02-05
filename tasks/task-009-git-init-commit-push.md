@@ -32,4 +32,6 @@ Criar repositório Git na raiz e realizar commit e push das alterações.
 ## Evidências/Logs
 - Saída dos comandos git.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
 

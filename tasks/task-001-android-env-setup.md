@@ -61,5 +61,6 @@ O build Android foi cancelado porque o ambiente Android não está configurado n
 ## Observações
 - Se o build estiver sendo feito via Visual Studio, garantir que o componente "Desenvolvimento móvel com .NET" está instalado no VS Installer.
 
-
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
 

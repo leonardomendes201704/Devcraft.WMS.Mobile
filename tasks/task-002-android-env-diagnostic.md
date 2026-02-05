@@ -35,5 +35,6 @@ Executar diagnósticos no ambiente para identificar por que o build Android foi 
 ## Evidências/Logs
 - Saída dos comandos acima.
 
-
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
 

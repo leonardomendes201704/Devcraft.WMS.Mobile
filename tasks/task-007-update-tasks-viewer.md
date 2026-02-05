@@ -32,4 +32,6 @@ Atualizar o HTML de visualização para carregar tasks automaticamente e exibir 
 - `tasks/tasks-viewer.html` atualizado.
 - `tasks/tasks-index.json` criado.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
 

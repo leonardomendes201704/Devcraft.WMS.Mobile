@@ -26,3 +26,6 @@ Adicionar diretriz para concluir automaticamente a task anterior ao criar uma no
 ## Evidências/Logs
 - `AGENTS.md` atualizado.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
+

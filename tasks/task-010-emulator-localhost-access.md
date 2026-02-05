@@ -25,3 +25,6 @@ Responder como acessar uma API rodando na máquina host a partir do app no emula
 ## Evidências/Logs
 - Orientação textual fornecida ao usuário.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
+

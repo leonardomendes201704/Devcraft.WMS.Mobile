@@ -28,4 +28,6 @@ Exibir aviso quando o carregamento automático falhar e incluir instruções par
 ## Evidências/Logs
 - `tasks/tasks-viewer.html` atualizado.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
 

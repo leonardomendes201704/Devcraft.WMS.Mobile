@@ -24,3 +24,6 @@ Registrar a orientação de acesso à API local a partir do Android Emulator usa
 ## Evidências/Logs
 - Resposta ao usuário com URL correta.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
+

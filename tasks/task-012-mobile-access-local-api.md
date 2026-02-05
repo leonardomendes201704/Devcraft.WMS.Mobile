@@ -32,3 +32,6 @@ Garantir que o app no Android Emulator consiga acessar a API rodando na máquina
 ## Evidências/Logs
 - Log/print do acesso bem-sucedido.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
+

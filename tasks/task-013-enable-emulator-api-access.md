@@ -32,3 +32,6 @@ Configurar API para aceitar conexões externas e ajustar app MAUI para consumir 
 ## Evidências/Logs
 - URL utilizada e resultado exibido no app.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
+

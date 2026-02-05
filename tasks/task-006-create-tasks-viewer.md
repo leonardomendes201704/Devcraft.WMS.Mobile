@@ -31,4 +31,6 @@ Criar um HTML dentro de `tasks/` para visualizar arquivos de task com layout cle
 ## Evidências/Logs
 - Arquivo `tasks/tasks-viewer.html` criado.
 
+## O que foi feito
+- Atualizado para incluir a seção conforme diretriz.
 
