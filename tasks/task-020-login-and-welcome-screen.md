@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:33
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:37
+- Duração: 00:04
 
 ## Objetivo
 Criar tela de login (email/senha), autenticar na API e redirecionar para uma tela de boas-vindas após sucesso.
@@ -34,3 +34,4 @@ Criar tela de login (email/senha), autenticar na API e redirecionar para uma tel
 
 ## O que foi feito
 - Task criada para implementar login e boas-vindas.
+
