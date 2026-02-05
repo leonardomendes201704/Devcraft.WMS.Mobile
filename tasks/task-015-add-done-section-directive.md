@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:21
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:22
+- Duração: 00:01
 
 ## Objetivo
 Adicionar diretriz para que toda task tenha, ao final, a seção "O que foi feito".
@@ -25,3 +25,7 @@ Adicionar diretriz para que toda task tenha, ao final, a seção "O que foi feit
 
 ## Evidências/Logs
 - `AGENTS.md` atualizado.
+
+## O que foi feito
+- Diretriz adicionada no AGENTS.md para exigir seção ao final de cada task.
+
