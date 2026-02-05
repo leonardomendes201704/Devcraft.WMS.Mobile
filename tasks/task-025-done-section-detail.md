@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:48
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:49
+- Duração: 00:01
 
 ## Objetivo
 Atualizar a diretriz para que a seção "O que foi feito" detalhe implementações, mudanças e arquivos/códigos alterados.
@@ -28,3 +28,4 @@ Atualizar a diretriz para que a seção "O que foi feito" detalhe implementaçõ
 
 ## O que foi feito
 - Task criada para atualizar a diretriz de detalhamento.
+
