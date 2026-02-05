@@ -15,5 +15,7 @@
   "task-014-auto-close-previous-task.md",
   "task-015-add-done-section-directive.md",
   "task-016-add-done-sections-existing.md",
-  "task-017-highlight-done-section.md"
+  "task-017-highlight-done-section.md",
+  "task-018-fix-connectionfailure.md",
+  "task-019-allow-cleartext-http.md"
 ]
