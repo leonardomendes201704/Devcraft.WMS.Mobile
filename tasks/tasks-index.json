@@ -32,5 +32,6 @@
   "task-031-auth-context-flow.md",
   "task-032-fix-build-errors.md",
   "task-033-fix-context-400.md",
-  "task-034-fix-warehouses-400.md"
+  "task-034-fix-warehouses-400.md",
+  "task-035-fix-warehouse-deserialize.md"
 ]

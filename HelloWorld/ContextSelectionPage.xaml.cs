@@ -87,5 +87,5 @@ public partial class ContextSelectionPage : ContentPage
 
 	public sealed record PagedResult<T>(IReadOnlyList<T> Items, int TotalCount, int PageNumber, int PageSize, string OrderBy, string OrderDir);
 	public sealed record CustomerItem(Guid Id, string Name, string Email, DateOnly DateOfBirth, DateTime CreatedAtUtc);
-	public sealed record WarehouseItem(Guid Id, string Code, string Name, string WarehouseType, bool IsPrimary, bool IsActive, string? City, string? State, string? Country, DateTime CreatedAtUtc);
+	public sealed record WarehouseItem(Guid Id, string Code, string Name, int WarehouseType, bool IsPrimary, bool IsActive, string? City, string? State, string? Country, DateTime CreatedAtUtc);
 }
