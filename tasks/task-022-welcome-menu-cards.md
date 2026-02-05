@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:42
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:43
+- Duração: 00:01
 
 ## Objetivo
 Trocar a tela de boas-vindas por um menu com cards iconificados e seções conforme solicitado.
@@ -30,3 +30,4 @@ Trocar a tela de boas-vindas por um menu com cards iconificados e seções confo
 
 ## O que foi feito
 - Task criada para substituir a tela de boas-vindas.
+
