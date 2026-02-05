@@ -11,5 +11,6 @@
   "task-010-emulator-localhost-access.md",
   "task-011-emulator-localhost-api-access.md",
   "task-012-mobile-access-local-api.md",
-  "task-013-enable-emulator-api-access.md"
+  "task-013-enable-emulator-api-access.md",
+  "task-014-auto-close-previous-task.md"
 ]
