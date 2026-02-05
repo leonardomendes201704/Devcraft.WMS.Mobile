@@ -36,5 +36,6 @@
   "task-035-fix-warehouse-deserialize.md",
   "task-036-generate-apk-wifi.md",
   "task-037-ip-firewall.md",
-  "task-038-firewall-verify-next-steps.md"
+  "task-038-firewall-verify-next-steps.md",
+  "task-039-android-version-compat.md"
 ]
