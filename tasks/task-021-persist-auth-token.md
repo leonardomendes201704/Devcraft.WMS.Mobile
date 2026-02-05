@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 12:39
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 12:41
+- Duração: 00:02
 
 ## Objetivo
 Persistir o token JWT retornado pelo login para uso posterior no app.
@@ -30,3 +30,4 @@ Persistir o token JWT retornado pelo login para uso posterior no app.
 
 ## O que foi feito
 - Task criada para persistência do token.
+
