@@ -39,5 +39,6 @@
   "task-038-firewall-verify-next-steps.md",
   "task-039-android-version-compat.md",
   "task-040-api-baseurl-toggle.md",
-  "task-041-generate-apk.md"
+  "task-041-generate-apk.md",
+  "task-042-apk-parse-error.md"
 ]
