@@ -47,6 +47,7 @@ public partial class OutboundCheckQueuePage : ContentPage
 			if (customerId is null)
 			{
 				StatusLabel.Text = "Contexto de cliente não definido.";
+				await DisplayAlert("Contexto obrigatório", "Selecione um cliente para carregar a fila de conferência.", "OK");
 				return;
 			}
 
