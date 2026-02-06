@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-06 07:49
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-06 07:57
+- Duração: 00:08
 
 ## Objetivo
 Identificar por que a API /api/outbound-checks não retorna itens para o app.
@@ -29,4 +29,5 @@ Identificar por que a API /api/outbound-checks não retorna itens para o app.
 - A preencher.
 
 ## O que foi feito
-- A preencher.
+- Ajustada a fila de conferência para exibir alerta quando o contexto de cliente não estiver definido.
+- Registrado diagnóstico do backend sobre `X-Customer-Id` e seed de dados.
