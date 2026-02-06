@@ -210,7 +210,7 @@ public partial class PickingExecutionPage : ContentPage
 	{
 		await SendConfirmAsync();
 		await DisplayAlert("Finalizado", "Tarefa atualizada com sucesso.", "OK");
-		await Navigation.PopAsync();
+		await Shell.Current.GoToAsync("..");
 	}
 
 	async Task SendConfirmAsync()
