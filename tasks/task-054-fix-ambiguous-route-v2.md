@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-06 08:25
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-06 08:26
+- Duração: 00:01
 
 ## Objetivo
 Eliminar erro de rota ambígua ao finalizar a execução de picking.
@@ -28,4 +28,4 @@ Eliminar erro de rota ambígua ao finalizar a execução de picking.
 - A preencher.
 
 ## O que foi feito
-- A preencher.
+- Alterada a finalização para navegação absoluta `//WelcomePage` via Shell.
