@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 21:01
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 21:01
+- Duração: 00:00
 
 ## Objetivo
 Investigar e orientar correção do erro de análise do APK no aparelho.
@@ -29,5 +29,4 @@ Investigar e orientar correção do erro de análise do APK no aparelho.
 ## Evidências/Logs
 - Saída do `adb install -r`.
 
-## O que foi feito
-- Task criada para diagnóstico do erro de instalação.
+## O que foi feito\r\n- Registrado diagnóstico e próximos passos para erro de análise do APK.\r\n
