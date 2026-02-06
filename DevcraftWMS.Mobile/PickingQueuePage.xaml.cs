@@ -83,14 +83,14 @@ public partial class PickingQueuePage : ContentPage
 
 		if (item.Status != 0)
 		{
-			await DisplayAlertAsync("Bloqueado", "Só é possível iniciar tarefas em status Pending.", "OK");
+			await DisplayAlert("Bloqueado", "Só é possível iniciar tarefas em status Pending.", "OK");
 			return;
 		}
 
 		var customerId = await AuthStorage.GetCustomerIdAsync();
 		if (customerId is null)
 		{
-			await DisplayAlertAsync("Erro", "Contexto de cliente não definido.", "OK");
+			await DisplayAlert("Erro", "Contexto de cliente não definido.", "OK");
 			return;
 		}
 
@@ -100,14 +100,22 @@ public partial class PickingQueuePage : ContentPage
 			var result = await ApiClient.PostAsync<PickingTaskDetail>($"api/picking-tasks/{item.Id}/start", null, headers);
 			if (result is not null)
 			{
-				await DisplayAlertAsync("Iniciado", "Tarefa iniciada com sucesso.", "OK");
+				await DisplayAlert("Iniciado", "Tarefa iniciada com sucesso.", "OK");
 				await LoadAsync();
 			}
 		}
 		catch (Exception ex)
 		{
-			await DisplayAlertAsync("Erro", ex.Message, "OK");
+			await DisplayAlert("Erro", ex.Message, "OK");
 		}
+	}
+
+	async void OnExecuteClicked(object? sender, EventArgs e)
+	{
+		if (sender is not Button btn || btn.CommandParameter is not PickingTaskItem item)
+			return;
+
+		await Shell.Current.GoToAsync($"{nameof(PickingExecutionPage)}?taskId={item.Id}");
 	}
 
 	public sealed record PagedResult<T>(IReadOnlyList<T> Items, int TotalCount, int PageNumber, int PageSize, string OrderBy, string OrderDir);

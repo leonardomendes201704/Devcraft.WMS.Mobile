@@ -29,7 +29,10 @@
                                 <Label Text="{Binding WarehouseName}" FontSize="12" TextColor="#6B7280" />
                                 <Label Text="{Binding StatusText}" FontSize="12" />
                                 <Label Text="Criado: {Binding CreatedAtUtc}" FontSize="12" />
-                                <Button Text="Iniciar" Clicked="OnStartClicked" CommandParameter="{Binding}" />
+                                <HorizontalStackLayout Spacing="8">
+                                    <Button Text="Iniciar" Clicked="OnStartClicked" CommandParameter="{Binding}" />
+                                    <Button Text="Executar" Clicked="OnExecuteClicked" CommandParameter="{Binding}" />
+                                </HorizontalStackLayout>
                             </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>

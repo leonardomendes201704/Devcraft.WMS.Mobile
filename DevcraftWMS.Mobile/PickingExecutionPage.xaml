@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DevcraftWMS.Mobile.PickingExecutionPage"
+             Title="Execução Picking">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20,16" Spacing="12">
+            <Label Text="Execução de Picking" FontSize="22" FontAttributes="Bold" />
+
+            <Frame Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="{Binding HeaderText}" FontAttributes="Bold" />
+                    <Label Text="{Binding ItemSummary}" FontSize="12" TextColor="#6B7280" />
+                    <Label Text="{Binding LocationSummary}" FontSize="12" />
+                    <Label Text="{Binding QuantitySummary}" FontSize="12" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Label Text="Scan / Entrada" FontAttributes="Bold" />
+            <Entry x:Name="LocationEntry" Placeholder="Localização (scan)" />
+            <Entry x:Name="SkuEntry" Placeholder="Produto / SKU (scan)" />
+            <Entry x:Name="LotEntry" Placeholder="Lote (scan, opcional)" />
+            <Entry x:Name="QuantityEntry" Placeholder="Quantidade" Keyboard="Numeric" />
+
+            <HorizontalStackLayout Spacing="12">
+                <CheckBox x:Name="PartialCheck" />
+                <Label Text="Parcial" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <Entry x:Name="ReasonEntry" Placeholder="Motivo da falta (se parcial)" />
+
+            <Button Text="Confirmar Item" Clicked="OnConfirmItemClicked" />
+
+            <Label x:Name="StatusLabel" TextColor="Red" />
+
+            <Button Text="Finalizar Tarefa" Clicked="OnFinishClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

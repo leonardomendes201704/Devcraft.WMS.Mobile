@@ -8,6 +8,7 @@ public partial class AppShell : Shell
 		Routing.RegisterRoute(nameof(WelcomePage), typeof(WelcomePage));
 		Routing.RegisterRoute(nameof(ContextSelectionPage), typeof(ContextSelectionPage));
 		Routing.RegisterRoute(nameof(PickingQueuePage), typeof(PickingQueuePage));
+		Routing.RegisterRoute(nameof(PickingExecutionPage), typeof(PickingExecutionPage));
 	}
 }
 
