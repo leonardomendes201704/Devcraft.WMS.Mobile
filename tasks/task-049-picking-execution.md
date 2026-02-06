@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-06 06:45
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-06 06:49
+- Duração: 00:04
 
 ## Objetivo
 Implementar a execução da separação com scan e confirmação de quantidades.
@@ -32,4 +32,8 @@ Implementar a execução da separação com scan e confirmação de quantidades.
 - A preencher.
 
 ## O que foi feito
-- A preencher.
+- Criada tela `PickingExecutionPage` com item atual, campos de scan e confirmação.
+- Implementado carregamento via GET `/api/picking-tasks/{id}` com header `X-Customer-Id`.
+- Adicionada validação de localização, SKU e lote (quando aplicável) e regra de parcial com motivo.
+- Envio de confirmação via POST `/api/picking-tasks/{id}/confirm` com itens e quantidades.
+- Navegação da fila para a execução usando rota no `AppShell`.

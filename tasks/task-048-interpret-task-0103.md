@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-06 06:43
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-06 06:49
+- Duração: 00:06
 
 ## Objetivo
 Interpretar a task de execução de picking e esclarecer o entendimento antes da implementação.
@@ -29,4 +29,5 @@ Interpretar a task de execução de picking e esclarecer o entendimento antes da
 - A preencher.
 
 ## O que foi feito
-- A preencher.
+- Interpretados objetivo, fluxo e integrações da TASK-0103.
+- Mapeados campos obrigatórios (local, SKU, lote, quantidade) e regras de parcial.
