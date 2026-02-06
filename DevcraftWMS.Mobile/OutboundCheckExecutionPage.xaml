@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DevcraftWMS.Mobile.OutboundCheckExecutionPage"
+             Title="Execução Conferência">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20,16" Spacing="12">
+            <Label Text="Execução de Conferência" FontSize="22" FontAttributes="Bold" />
+
+            <Frame Padding="12" CornerRadius="12" BorderColor="#E5E7EB">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="{Binding HeaderText}" FontAttributes="Bold" />
+                    <Label Text="{Binding StatusText}" FontSize="12" TextColor="#6B7280" />
+                    <Label Text="{Binding PriorityText}" FontSize="12" TextColor="#6B7280" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Label Text="Itens" FontAttributes="Bold" />
+            <CollectionView ItemsSource="{Binding Items}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="12" CornerRadius="12" BorderColor="#E5E7EB" Margin="0,4">
+                            <VerticalStackLayout Spacing="4">
+                                <Label Text="{Binding ProductCode}" FontAttributes="Bold" />
+                                <Label Text="{Binding ProductName}" FontSize="12" TextColor="#6B7280" />
+                                <Label Text="{Binding QuantityText}" FontSize="12" />
+                                <Label Text="{Binding DivergenceText}" FontSize="12" TextColor="#6B7280" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Label Text="Obs.: Execução detalhada será feita na TASK-0105." FontSize="12" TextColor="#6B7280" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

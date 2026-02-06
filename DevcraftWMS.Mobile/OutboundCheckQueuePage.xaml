@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DevcraftWMS.Mobile.OutboundCheckQueuePage"
+             Title="Fila Conferência">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20,16" Spacing="12">
+            <Label Text="Fila de Conferência" FontSize="22" FontAttributes="Bold" />
+
+            <Entry x:Name="SearchEntry" Placeholder="Buscar por OS" TextChanged="OnSearchChanged" />
+
+            <Grid ColumnSpacing="12" RowSpacing="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Picker x:Name="StatusPicker" Grid.Column="0" Title="Status" SelectedIndexChanged="OnFilterChanged" />
+                <Picker x:Name="PriorityPicker" Grid.Column="1" Title="Prioridade" SelectedIndexChanged="OnFilterChanged" />
+            </Grid>
+
+            <HorizontalStackLayout Spacing="12">
+                <Switch x:Name="ActiveSwitch" Toggled="OnFilterChanged" />
+                <Label Text="Ativo" VerticalOptions="Center" />
+                <Button Text="Atualizar" Clicked="OnRefreshClicked" />
+            </HorizontalStackLayout>
+
+            <Label x:Name="StatusLabel" TextColor="Red" />
+
+            <CollectionView x:Name="TasksList">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="12" CornerRadius="12" BorderColor="#E5E7EB" Margin="0,4">
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="{Binding OrderNumber}" FontAttributes="Bold" />
+                                <Label Text="{Binding WarehouseName}" FontSize="12" TextColor="#6B7280" />
+                                <HorizontalStackLayout Spacing="8">
+                                    <Frame Padding="6,2" CornerRadius="8" BackgroundColor="{Binding StatusColor}">
+                                        <Label Text="{Binding StatusText}" FontSize="10" TextColor="White" />
+                                    </Frame>
+                                    <Frame Padding="6,2" CornerRadius="8" BackgroundColor="{Binding PriorityColor}">
+                                        <Label Text="{Binding PriorityText}" FontSize="10" TextColor="White" />
+                                    </Frame>
+                                </HorizontalStackLayout>
+                                <Label Text="{Binding ItemsLabel}" FontSize="12" TextColor="#6B7280" />
+                                <Label Text="{Binding CreatedAtLabel}" FontSize="12" />
+                                <Button Text="Iniciar" Clicked="OnStartClicked" CommandParameter="{Binding}" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

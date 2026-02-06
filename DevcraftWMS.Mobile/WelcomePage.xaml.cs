@@ -65,6 +65,10 @@ public partial class WelcomePage : ContentPage
 		{
 			await Shell.Current.GoToAsync(nameof(PickingQueuePage));
 		}
+		else if (card.ClassId == "OutboundCheckQueue")
+		{
+			await Shell.Current.GoToAsync(nameof(OutboundCheckQueuePage));
+		}
 	}
 }
 

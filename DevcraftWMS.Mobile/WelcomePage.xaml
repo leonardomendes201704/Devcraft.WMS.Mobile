@@ -116,7 +116,7 @@
                         </Grid>
                     </Border>
                 </sf:SfEffectsView>
-                <sf:SfEffectsView Grid.Row="0" Grid.Column="1" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
+                <sf:SfEffectsView Grid.Row="0" Grid.Column="1" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped" ClassId="OutboundCheckQueue">
                     <Border Style="{StaticResource GlassCard}">
                         <Grid>
                             <VerticalStackLayout Spacing="6">
