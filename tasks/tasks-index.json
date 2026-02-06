@@ -41,5 +41,6 @@
   "task-040-api-baseurl-toggle.md",
   "task-041-generate-apk.md",
   "task-042-apk-parse-error.md",
-  "task-043-apk-arm64.md"
+  "task-043-apk-arm64.md",
+  "task-044-interpret-task-0102.md"
 ]
