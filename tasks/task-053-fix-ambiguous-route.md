@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-06 08:20
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-06 08:21
+- Duração: 00:01
 
 ## Objetivo
 Eliminar erro de rota ambígua ao finalizar execução de picking.
@@ -28,4 +28,4 @@ Eliminar erro de rota ambígua ao finalizar execução de picking.
 - A preencher.
 
 ## O que foi feito
-- A preencher.
+- Ajustada navegação de finalização para `Shell.Current.GoToAsync(\"..\")` evitando rotas ambíguas.
