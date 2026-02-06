@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-06 06:52
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-06 07:42
+- Duração: 00:50
 
 ## Objetivo
 Interpretar a task de fila de conferência outbound e registrar entendimento.
@@ -29,4 +29,5 @@ Interpretar a task de fila de conferência outbound e registrar entendimento.
 - A preencher.
 
 ## O que foi feito
-- A preencher.
+- Interpretados os novos requisitos da TASK-0104 com enums, headers e regras de start.
+- Mapeadas integrações (GET/POST) e campos exibidos na fila.

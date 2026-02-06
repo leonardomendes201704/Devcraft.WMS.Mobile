@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-06 06:55
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-06 07:42
+- Duração: 00:47
 
 ## Objetivo
 Implementar a fila de conferência outbound com filtros e ação de start.
@@ -31,4 +31,8 @@ Implementar a fila de conferência outbound com filtros e ação de start.
 - A preencher.
 
 ## O que foi feito
-- A preencher.
+- Criada tela `OutboundCheckQueuePage` com filtros (status/prioridade), busca por OS e listagem paginada.
+- Implementada chamada GET `/api/outbound-checks` com `X-Customer-Id` e filtro por warehouse atual.
+- Adicionada ação Start com POST `/api/outbound-checks/{id}/start` e navegação para execução.
+- Criada tela `OutboundCheckExecutionPage` para exibir resumo e itens retornados no start.
+- Menu “Conferência” agora navega para a fila de conferência.
