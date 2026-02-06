@@ -27,7 +27,7 @@
                             <VerticalStackLayout Spacing="6">
                                 <Label Text="{Binding OrderNumber}" FontAttributes="Bold" />
                                 <Label Text="{Binding WarehouseName}" FontSize="12" TextColor="#6B7280" />
-                                <Label Text="{Binding Status}" FontSize="12" />
+                                <Label Text="{Binding StatusText}" FontSize="12" />
                                 <Label Text="Criado: {Binding CreatedAtUtc}" FontSize="12" />
                                 <Button Text="Iniciar" Clicked="OnStartClicked" CommandParameter="{Binding}" />
                             </VerticalStackLayout>
