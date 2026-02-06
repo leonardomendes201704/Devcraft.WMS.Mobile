@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 21:26
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 21:30
+- Duração: 00:04
 
 ## Objetivo
 Atualizar nome do app, namespaces e referências de DevcraftWMS.Mobile para DevcraftWMS.Mobile.
@@ -31,5 +31,9 @@ Atualizar nome do app, namespaces e referências de DevcraftWMS.Mobile para Devc
 - A preencher.
 
 ## O que foi feito
-- A preencher.
+- Pasta do projeto renomeada para `DevcraftWMS.Mobile` e csproj para `DevcraftWMS.Mobile.csproj`.
+- Atualizados namespaces e `x:Class` em XAML/CS para `DevcraftWMS.Mobile`.
+- Ajustados identificadores do app (RootNamespace, AssemblyName, ApplicationTitle e ApplicationId).
+- Corrigidas referências no `.slnx` e nomes de manifest WinUI.
+- Atualizadas referências nas tasks antigas para o novo caminho.
 
