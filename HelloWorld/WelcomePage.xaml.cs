@@ -60,5 +60,10 @@ public partial class WelcomePage : ContentPage
 		{
 			_isAnimating = false;
 		}
+
+		if (card.ClassId == "PickingQueue")
+		{
+			await Shell.Current.GoToAsync(nameof(PickingQueuePage));
+		}
 	}
 }

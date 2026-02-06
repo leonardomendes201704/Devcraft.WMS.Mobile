@@ -104,7 +104,7 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <sf:SfEffectsView Grid.Row="0" Grid.Column="0" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped">
+                <sf:SfEffectsView Grid.Row="0" Grid.Column="0" Style="{StaticResource GlassRipple}" TouchUp="OnCardTapped" ClassId="PickingQueue">
                     <Border Style="{StaticResource GlassCard}">
                         <Grid>
                             <VerticalStackLayout Spacing="6">

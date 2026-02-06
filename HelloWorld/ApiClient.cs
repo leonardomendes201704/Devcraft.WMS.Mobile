@@ -19,12 +19,15 @@ public static class ApiClient
 		return JsonSerializer.Deserialize<T>(json, JsonOptions);
 	}
 
-	public static async Task<T?> PostAsync<T>(string path, object payload, IDictionary<string, string?>? headers = null)
+	public static async Task<T?> PostAsync<T>(string path, object? payload = null, IDictionary<string, string?>? headers = null)
 	{
 		using var request = new HttpRequestMessage(HttpMethod.Post, BuildUrl(path));
 		await AddAuthHeaderAsync(request);
 		AddCustomHeaders(request, headers);
-		request.Content = JsonContent.Create(payload);
+		if (payload is not null)
+		{
+			request.Content = JsonContent.Create(payload);
+		}
 		using var response = await Http.SendAsync(request);
 		response.EnsureSuccessStatusCode();
 		var json = await response.Content.ReadAsStringAsync();
