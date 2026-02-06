@@ -2,8 +2,8 @@
 
 ## Controle de tempo
 - Início: 2026-02-05 21:38
-- Fim: Pendente (após commit e push)
-- Duração: Pendente (HH:MM)
+- Fim: 2026-02-05 21:39
+- Duração: 00:01
 
 ## Objetivo
 Ajustar o modelo/parse da resposta da API de picking tasks.
@@ -29,4 +29,7 @@ Ajustar o modelo/parse da resposta da API de picking tasks.
 - A preencher.
 
 ## O que foi feito
-- A preencher.
+- Ajustado modelo de picking task para aceitar `status` numérico da API.
+- Criado `StatusText` derivado para exibição e comparação no app.
+- Alterado filtro para enviar `status` numérico no querystring.
+- UI passou a bindar `StatusText` no card.
