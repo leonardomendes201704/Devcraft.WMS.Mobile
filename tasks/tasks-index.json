@@ -40,5 +40,6 @@
   "task-039-android-version-compat.md",
   "task-040-api-baseurl-toggle.md",
   "task-041-generate-apk.md",
-  "task-042-apk-parse-error.md"
+  "task-042-apk-parse-error.md",
+  "task-043-apk-arm64.md"
 ]
