@@ -27,7 +27,7 @@ Executar diagnósticos no ambiente para identificar por que o build Android foi 
 1. `dotnet workload list`
 2. Verificar `ANDROID_SDK_ROOT`, `ANDROID_HOME`, `JAVA_HOME`.
 3. Verificar pastas padrão do Android SDK.
-4. `dotnet build .\HelloWorld\HelloWorld.csproj -f net10.0-android -c Debug` (capturar saída).
+4. `dotnet build .\DevcraftWMS.Mobile\DevcraftWMS.Mobile.csproj -f net10.0-android -c Debug` (capturar saída).
 
 ## Critérios de aceitação
 - Diagnóstico completo com logs capturados.
@@ -37,4 +37,5 @@ Executar diagnósticos no ambiente para identificar por que o build Android foi 
 
 ## O que foi feito
 - Atualizado para incluir a seção conforme diretriz.
+
 

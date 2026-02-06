@@ -28,4 +28,6 @@ Gerar APK Release para instalação no dispositivo físico.
 ## Evidências/Logs
 - Saída do publish.
 
-## O que foi feito\r\n- Build Release APK executado com sucesso (net10.0-android).\r\n- APK gerado em `HelloWorld\\bin\\Release\\net10.0-android\\publish\\` (nome `com.companyname.helloworld-Signed.apk`).\r\n- Processo travado por lock foi resolvido encerrando processos dotnet/MSBuild antes do publish.\r\n
+## O que foi feito\r\n- Build Release APK executado com sucesso (net10.0-android).\r\n- APK gerado em `DevcraftWMS.Mobile\\bin\\Release\\net10.0-android\\publish\\` (nome `com.devcraft.wms.mobile-Signed.apk`).\r\n- Processo travado por lock foi resolvido encerrando processos dotnet/MSBuild antes do publish.\r\n
+
+

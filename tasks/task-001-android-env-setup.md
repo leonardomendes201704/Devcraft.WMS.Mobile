@@ -10,7 +10,7 @@
 Habilitar o build Android do projeto .NET MAUI, resolvendo a falha "O ambiente Android precisa ser configurado".
 
 ## Contexto
-- Projeto: HelloWorld (.NET MAUI)
+- Projeto: DevcraftWMS.Mobile (.NET MAUI)
 - Erro ao compilar (Visual Studio/build):
   - "Erro: Cancelado"
   - "O ambiente Android precisa ser configurado. O build foi cancelado"
@@ -48,7 +48,7 @@ O build Android foi cancelado porque o ambiente Android não está configurado n
 4. Validar Java/JDK:
    - Verificar `JAVA_HOME`
 5. Tentar build Android:
-   - `dotnet build .\HelloWorld\HelloWorld.csproj -f net10.0-android -c Debug`
+   - `dotnet build .\DevcraftWMS.Mobile\DevcraftWMS.Mobile.csproj -f net10.0-android -c Debug`
 
 ## Critérios de aceitação
 - Build Android conclui com sucesso para `net10.0-android`.
@@ -63,4 +63,5 @@ O build Android foi cancelado porque o ambiente Android não está configurado n
 
 ## O que foi feito
 - Atualizado para incluir a seção conforme diretriz.
+
 

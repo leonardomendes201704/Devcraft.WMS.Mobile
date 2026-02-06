@@ -28,4 +28,6 @@ Gerar APK apenas para arm64-v8a para instalação no Galaxy S10.
 ## Evidências/Logs
 - Saída do publish.
 
-## O que foi feito\r\n- Publish arm64 executado com `RuntimeIdentifier=android-arm64` e `AndroidCreatePackagePerAbi=true`.\r\n- APK arm64 gerado em `HelloWorld\\bin\\Release\\net10.0-android\\android-arm64\\publish\\com.companyname.helloworld-Signed.apk`.\r\n
+## O que foi feito\r\n- Publish arm64 executado com `RuntimeIdentifier=android-arm64` e `AndroidCreatePackagePerAbi=true`.\r\n- APK arm64 gerado em `DevcraftWMS.Mobile\\bin\\Release\\net10.0-android\\android-arm64\\publish\\com.devcraft.wms.mobile-Signed.apk`.\r\n
+
+

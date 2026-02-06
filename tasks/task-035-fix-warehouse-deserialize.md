@@ -28,4 +28,5 @@ Corrigir falha de desserialização do JSON de warehouses no app.
 ## Evidências/Logs
 - Lista carregada no app.
 
-## O que foi feito\r\n- `HelloWorld/ContextSelectionPage.xaml.cs`: alterado `WarehouseItem.WarehouseType` de `string` para `int` para casar com JSON da API.\r\n- Build Android validado (net10.0-android).\r\n
+## O que foi feito\r\n- `DevcraftWMS.Mobile/ContextSelectionPage.xaml.cs`: alterado `WarehouseItem.WarehouseType` de `string` para `int` para casar com JSON da API.\r\n- Build Android validado (net10.0-android).\r\n
+

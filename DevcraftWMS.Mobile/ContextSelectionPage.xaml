@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DevcraftWMS.Mobile.ContextSelectionPage"
+             Title="Selecionar Contexto">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+            <Label Text="Selecionar contexto" FontSize="22" FontAttributes="Bold" />
+            <Label Text="Escolha o cliente e o armazém antes de continuar." TextColor="#6B7280" />
+
+            <Label Text="Cliente" FontAttributes="Bold" />
+            <Picker x:Name="CustomerPicker" Title="Selecione o cliente" />
+
+            <Label Text="Armazém" FontAttributes="Bold" />
+            <Picker x:Name="WarehousePicker" Title="Selecione o armazém" />
+
+            <Button x:Name="ContinueBtn" Text="Continuar" Clicked="OnContinueClicked" />
+            <Label x:Name="StatusLabel" TextColor="Red" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

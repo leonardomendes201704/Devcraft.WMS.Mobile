@@ -30,4 +30,5 @@ Resolver 400 no endpoint de warehouses adicionando o header de contexto do clien
 ## Evidências/Logs
 - Lista de warehouses carregada no app.
 
-## O que foi feito\r\n- `HelloWorld/ApiClient.cs`: adicionado suporte a headers customizados por request.\r\n- `HelloWorld/ContextSelectionPage.xaml.cs`: envio do header `X-Customer-Id` ao carregar warehouses e recarga ao trocar cliente.\r\n- Build Android validado (net10.0-android).\r\n
+## O que foi feito\r\n- `DevcraftWMS.Mobile/ApiClient.cs`: adicionado suporte a headers customizados por request.\r\n- `DevcraftWMS.Mobile/ContextSelectionPage.xaml.cs`: envio do header `X-Customer-Id` ao carregar warehouses e recarga ao trocar cliente.\r\n- Build Android validado (net10.0-android).\r\n
+

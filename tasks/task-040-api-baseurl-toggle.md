@@ -30,4 +30,5 @@ Permitir alternar a URL base da API entre emulador e dispositivo físico via cha
 ## Evidências/Logs
 - URL selecionada refletida nas chamadas.
 
-## O que foi feito\r\n- `HelloWorld/AppSettings.cs`: criada configuração persistente para alternar URL (emulador vs dispositivo).\r\n- `HelloWorld/ApiClient.cs`: usa a URL configurada para Android quando ativada.\r\n- `HelloWorld/LoginPage.xaml` e `HelloWorld/LoginPage.xaml.cs`: adicionados toggle e label para alternância.\r\n- Build Android validado (net10.0-android).\r\n
+## O que foi feito\r\n- `DevcraftWMS.Mobile/AppSettings.cs`: criada configuração persistente para alternar URL (emulador vs dispositivo).\r\n- `DevcraftWMS.Mobile/ApiClient.cs`: usa a URL configurada para Android quando ativada.\r\n- `DevcraftWMS.Mobile/LoginPage.xaml` e `DevcraftWMS.Mobile/LoginPage.xaml.cs`: adicionados toggle e label para alternância.\r\n- Build Android validado (net10.0-android).\r\n
+
